@@ -2,13 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import Header from "@/components/layout/header";
-import Sidebar from "@/components/sections/social-sidebar";
 
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] sm:min-h-screen overflow-hidden bg-white">
       <Header />
-      <Sidebar />
       
       {/* --- Full-width Mountain Background --- */}
       <div className="absolute inset-0">
@@ -21,8 +19,8 @@ export default function Hero() {
           sizes="100vw"
         />
 
-        {/* FADE GRADIENT - Fades mountain from bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+        {/* FADE GRADIENT - Fades mountain into the next section color */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1F1F1F]"></div>
       </div>
 
       {/* --- Hero Content --- */}

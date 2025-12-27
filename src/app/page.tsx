@@ -13,7 +13,7 @@ export default function Home() {
         <EventsPreview />
       </main>
       <Footer />
-      <RecruitmentFAB />
+      {/* <RecruitmentFAB /> */}
     </div>
   );
 }
